@@ -1,0 +1,36 @@
+.console {
+  background-color: #000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.console pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.cursor {
+  position: absolute;
+  bottom: 20px;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff00;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
